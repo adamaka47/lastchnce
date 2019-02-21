@@ -1,0 +1,998 @@
+body
+	font-family: 'PFL', sans-serif
+	overflow-x: hidden
+
+
+.section_header h2
+	text-transform: uppercase
+	color: #666
+	font-family: PFB
+
+
+a:hover, a:focus, a:visited, a:active
+	text-decoration: none
+
+/* =============== ШАПКА ===============*/
+
+.header
+	padding-top: 20px
+	color: #666
+	padding-bottom: 20px
+	height: 110px
+	&_logo
+		img
+			max-width: 100px
+	&_info
+	h4
+		font-family: PFB
+		text-transform: uppercase
+	h5
+		font-family: PFL
+		font-size: 15px
+	&_number
+		text-align: right
+		a
+			text-decoration: none
+			color: #666
+			display: inline-block
+			font-size: 25px
+			font-family: PFB
+			&::before
+				content: ' '
+				background: url('../img/phone_icon.png') center no-repeat
+				display: inline-block
+				margin-bottom: 3px
+				width: 20px
+				height: 20px
+				vertical-align: middle
+				margin-right: 8px
+		p
+			font-family: PFL
+		h3
+			margin-top: 7px
+
+
+/* =============== НАВИГАЦИЯ ===============*/
+
+nav#top_nav
+	background-color: #fafdfa
+	top: 110px
+	position: fixed
+	z-index: 1000
+	width: 100%
+	ul.list-inline
+		margin-bottom: 0
+	ul.list-inline a
+		display: inline-block		
+		font-family: PFL
+		text-transform: uppercase
+		text-decoration: none
+		padding: 20px 10px
+		color: #666
+		-moz-transition: all 0.2s 0.02s ease
+		-o-transition: all 0.2s 0.02s ease
+		-webkit-transition: all 0.2s 0.02s ease
+		transition: all 0.2s 0.02s ease
+		&:hover
+			background-color: #67cc67
+			color: #fff
+
+
+/* =============== ЭКРАН ===============*/
+
+.main
+	background: url('../img/main_bg.jpg') center no-repeat
+	background-size: cover
+	margin-top: 60px
+	&_header
+		h1
+			margin-top: 100px
+			margin-bottom: 90px
+			font-family: PFB
+			color: #fff
+			text-transform: uppercase
+			display: inline-block
+			span
+				background-color: #67cc67
+				padding: 4px
+	h3
+		text-transform: uppercase
+		font-family: PFB
+		color: #666
+		span
+			color: #f93
+	&_buttons
+		margin-top: 10px
+		margin-bottom: 100px
+		button#meas
+			border: none
+			background-color: #f93
+			padding: 17px 35px
+			color: #fff
+			font-family: PFB
+			text-transform: uppercase
+			font-size: 20px
+			border-radius: 5px
+			&:hover
+				background-color: #d67513
+		button#types
+			border: none
+			background-color: transparent
+			padding: 15px 33px
+			color: #f93
+			font-family: PFB
+			border-radius: 5px
+			font-size: 20px
+			text-transform: uppercase
+			margin-left: 30px
+			border: 2px solid #f93
+			&:hover
+				background-color: rgba(255,255,255,.45)
+				color: #f93
+
+
+
+
+
+/* =============== ВИДЫ ЖАЛЮЗИ ===============*/
+
+
+.specials
+	padding-top: 65px
+	color: #666
+	padding-bottom: 40px
+	.section_header
+		margin-bottom: 50px
+	h4
+		margin-top: 25px
+		text-transform: uppercase
+		font-family: PFB
+	&_btn
+		border: none
+		color: #6c6
+		border: 2px solid #6c6
+		padding: 15px 24px
+		background-color: transparent
+		transition: .2s
+		text-transform: uppercase
+		font-family: PFB
+		&:hover
+			background-color: #6c6
+			color: #fff
+		&_o
+			border: none
+			color: #fff
+			border: 2px solid #6c6
+			padding: 15px 24px
+			margin-left: 3px
+			background-color: #6c6
+			text-transform: uppercase
+			transition: .2s
+			font-family: PFB
+			&:hover
+				background-color: transparent
+				color: #6c6
+	.card
+		border: 2px solid transparent
+		padding: 7px 5px
+
+		&:hover
+			border: 2px solid #b2e5b2
+			background-color: #fafdfa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============== ПОМОЩЬ ===============*/
+
+
+
+#free
+	border: none
+	background-color: transparent
+	color: #f93
+	border: 2px solid #f93
+	padding: 15px 35px
+	font-family: PFB
+	text-transform: uppercase
+	transition: .15s
+	&:hover
+		background-color: #f93
+		color: #fff
+
+
+.help
+	padding-top: 65px
+	padding-bottom: 50px
+	background-color: #eee
+	h3
+		color: #f93
+		text-transform: uppercase
+		font-family: PFB
+	p
+		color: #666
+		font-family: PFL
+		font-size: 18px
+	img
+		margin-top: 25px
+
+.card
+	margin-top: 50px
+
+/* =============== ПОРТФОЛИО ===============*/
+
+.portfolio
+	padding-top: 65px
+	margin-bottom: 50px
+
+.slider
+	margin-top: 50px
+
+
+/* =============== УСТАНОВКА ===============*/
+
+
+
+.offer
+	padding-top: 60px
+	background-color: #eee
+	padding-bottom: 60px
+	h4
+		text-transform: uppercase
+		font-family: PFB
+		color: #f93
+	h3
+		text-transform: uppercase
+		color: #f93
+		font-family: PFB
+	p
+		font-family: PFL
+		color: #666
+		font-size: 22px
+	input[name="name"]
+		background: #fff url('../img/icon_man.png') center left 5px no-repeat
+		padding: 25px
+		padding-left: 30px
+		border: none
+		border: 1px solid #ccc
+		font-family: PFL
+		border-radius: 0
+		opacity: 0.6
+		&:focus
+			opacity: 1
+			outline: none
+			outline: 2px solid #f93
+	input[name="phone"]
+		background: #fff url('../img/icon_tele.png') center left 5px no-repeat
+		padding: 25px
+		padding-left: 30px
+		border: none
+		border: 1px solid #ccc
+		font-family: PFL
+		border-radius: 0
+		opacity: 0.6
+		&:focus
+			opacity: 1
+			outline: none
+			outline: 2px solid #f93
+	button[type="submit"]
+		background-color: #f93
+		color: #fff
+		font-family: PFB
+		border: none
+		border: 2px solid #f93
+		padding: 15px 
+		letter-spacing: .2px
+		border-radius: 5px
+		text-transform: uppercase
+		transition: .4s
+		&:hover
+			color: #f93
+			background-color: transparent
+
+
+
+/* =============== ОТЗЫВЫ ===============*/
+
+
+
+.feedback
+	background-color: #f8f8f8
+	padding-top: 45px
+	padding-bottom: 80px
+	.section_header
+		margin-bottom: 50px
+	.item
+		padding: 20px
+		background-color: #aaa
+		height: 300px
+		h5
+			font-family: PFB
+			color: #666
+			font-size: 20px
+		a
+			font-size: 18px
+		p
+			margin-top: 30px
+			font-family: PFL
+
+		audio
+			margin-top: 15px
+	.carousel-indicators
+		bottom: -65px
+		.active
+			background-color: #f93
+		li
+			border: 1px solid #f93
+
+audio::-webkit-media-controls-panel
+
+	background: #f93
+	color: #f93
+	
+
+
+/* =============== ФУТЕР ===============*/
+
+
+.footer
+	padding-top: 50px
+	padding-bottom: 50px
+	background-color: #666
+	color: #fff
+	.icon
+		background-color: #ccc
+		display: inline-block
+		border-radius: 50%
+		width: 35px
+		line-height: 33px
+		margin-right: 10px
+		padding-left: 8px
+		height: 35px
+		transition: .2s
+		&:nth-child(2)
+			padding-left: 9px
+		&:hover
+			background-color: #fff
+		&:last-child
+			margin-right: 0
+	.social
+		margin-top: 20px
+	#answer
+		background-color: transparent
+		border: none
+		padding: 10px 35px
+		color: #fff
+		border: 2px solid #fff
+		text-transform: uppercase
+		transition: .2s
+		font-family: PFB
+		&:hover
+			color: #666
+			background-color: #fff
+	.all_me
+		margin-top: 35px
+		h5
+			font-size: 20px
+		p
+			text-transform: uppercase
+			font-family: PFL
+	.policy
+		text-align: center
+		a
+			color: #fff
+			border-bottom: 1px solid #fff
+			display: inline-block
+			// margin-bottom: 18px
+	.data
+		text-align: right
+		h4
+			font-family: PFB
+			text-transform: uppercase
+		a
+			color: #ff9933
+			font-family: PFB
+			transition: .2s
+			&:hover
+				color: #fff
+	h2
+		font-family: PFB
+		text-transform: uppercase
+		color: #fff
+		margin-left: -15px
+	address
+		p#address
+			margin-top: 20px
+			font-family: PFL
+			margin-bottom: 0
+			text-transform: uppercase
+			font-size: 13px
+			color: #b6b6b6
+			&::before
+				content: ' '
+				width: 14px
+				height: 14px
+				background: url('../img/icon_address.png') center no-repeat
+				display: inline-block
+				vertical-align: middle
+				margin-bottom: 3px
+				margin-right: 5px
+	p#nazran
+		font-size: 20px
+		font-family: PFL
+		margin-top: 10px
+	p#phone
+		font-family: PFL
+		margin-bottom: 0
+		text-transform: uppercase
+		font-size: 13px
+		color: #b6b6b6
+		&::before
+			content: ' '
+			width: 14px
+			height: 14px
+			background: url('../img/icon_phone.png') center no-repeat
+			display: inline-block
+			vertical-align: middle
+			margin-bottom: 3px
+			margin-right: 5px
+	p#number
+		font-size: 20px
+		font-family: PFL
+		margin-top: 10px
+
+
+/* =============== МОДАЛКИ ===============*/
+
+.modal-dialog
+	margin-top: 10%
+
+button:focus
+	outline: none
+
+.header_modal
+	h4
+		color: #666
+		text-transform: uppercase
+		font-family: PFB
+		text-align: center
+		margin: 0
+.modal-header
+	border: none
+	margin-top: -50px
+	.close
+		text-shadow: none
+		color: #fff
+		opacity: .7
+		margin-right: -30px
+
+.modal-content
+	border-radius: 0
+.modal-body
+	input[name="name"]
+		background: #fff url('../img/icon_man.png') center left 5px no-repeat
+		padding: 25px
+		padding-left: 30px
+		border: none
+		border: 1px solid #ccc
+		font-family: PFL
+		margin-top: 25px
+		border-radius: 0
+		opacity: 0.6
+		&:focus
+			opacity: 1
+			outline: none
+			outline: 2px solid #f93
+	input[name="phone"]
+		background: #fff url('../img/icon_tele.png') center left 5px no-repeat
+		padding: 25px
+		padding-left: 30px
+		border: none
+		border: 1px solid #ccc
+		font-family: PFL
+		border-radius: 0
+		margin-top: 25px
+		opacity: 0.6
+		&:focus
+			opacity: 1
+			outline: none
+			outline: 2px solid #f93
+	button[type="submit"]
+		background-color: #f93
+		color: #fff
+		font-family: PFB
+		border: none
+		border: 2px solid #f93
+		padding: 15px 
+		letter-spacing: .2px
+		border-radius: 5px
+		text-transform: uppercase
+		margin-top: 25px
+		margin-left: auto
+		display: block
+		margin-right: auto
+		transition: .4s
+		&:hover
+			color: #f93
+			background-color: transparent
+	.fotorama
+		margin-top: 12px
+		padding-left: 6px
+	textarea
+		resize: none
+		margin-top: 25px
+		width: 100%
+		padding-left: 15px
+		padding-top: 15px
+
+		font-family: PFL
+		opacity: 0.6
+		&:focus
+			outline: 2px solid #f93
+			opacity: 1
+	.political
+		h4
+			margin-bottom: 20px
+			padding-top: 5px
+	p
+		padding: 10px
+		font-size: 16px
+		span
+			color: #f93
+			font-family: PFB
+			font-size: 24px
+	
+
+
+.header_modal_info
+	h4
+		color: #666
+		// margin-left: 20px
+		padding-left: 20px
+		text-transform: uppercase
+		font-family: PFB
+		margin: 0
+#horizontal
+	p
+		font-family: PFL
+		font-size: 18px
+	button[type="submit"]
+		// display: inline-block
+		padding: 8px
+		padding: 15px 8px
+
+
+// MEDIA
+.dropdown-toggle
+	display: inline-block
+	padding: 8px 12px 6px
+	margin-top: 16px
+	color: #111
+	border: 2px solid #111
+	border-radius: 5px
+	margin-left: -2px
+
+	&:hover
+		background-color: #c7e2a5
+		color: #833D3D
+	i
+		font-size: 20px
+
+
+
+@media (min-width: 768px)
+	#top
+		display: none
+
+
+@media (min-width: 575.98px) and (max-width: 991.98px)
+	.offer
+		text-align: center
+		input[name="name"]
+			width: 60%
+			margin-left: auto
+			margin-right: auto
+			margin-top: 15px
+		input[name="phone"]
+			width: 60%
+			margin-left: auto
+			margin-right: auto
+			margin-top: 15px
+		button[type="submit"]
+			margin-top: 15px
+			display: block
+			margin-left: auto
+			margin-right: auto
+
+
+@media (min-width: 768px) and (max-width: 991px)
+	.footer
+		text-align: center
+		.icon
+			background-color: #ccc
+			display: inline-block
+			border-radius: 50%
+			width: 35px
+			line-height: 33px
+			margin-right: 10px
+			padding-left: 2px
+			height: 35px
+			transition: .2s
+			&:nth-child(2)
+				padding-left: 2px
+			&:hover
+				background-color: #fff
+			&:last-child
+				margin-right: 0
+		.social
+			margin-top: 20px
+		#answer
+			background-color: transparent
+			display: block
+			margin-left: auto
+			margin-right: auto
+			margin-top: 30px
+			border: none
+			padding: 10px 35px
+			color: #fff
+			border: 2px solid #fff
+			text-transform: uppercase
+			transition: .2s
+			font-family: PFB
+			&:hover
+				color: #666
+				background-color: #fff
+		.all_me
+			margin-top: 35px
+
+			h5
+				font-size: 20px
+			p
+				text-transform: uppercase
+				font-family: PFL
+		.policy
+			text-align: center
+			a
+				color: #fff
+				border-bottom: 1px solid #fff
+				display: inline-block
+		.data
+			text-align: center
+			h4
+				font-family: PFB
+				text-transform: uppercase
+			a
+				color: #ff9933
+				font-family: PFB
+				transition: .2s
+				&:hover
+					color: #fff
+		address
+			p#address
+				margin-top: 10px
+				font-family: PFL
+				margin-bottom: 0
+				margin-left: -20px
+				&::before
+					margin-right: 5px
+		p#phone
+			margin-left: -20px
+		.details
+			.inn
+				margin-top: -20px
+				margin-bottom: 30px
+		.policy
+			margin-bottom: 40px
+	.feedback
+		.item
+			height: 100%
+			text-align: center
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 767.98px)
+	#horizontal
+	p
+		font-family: PFL
+		font-size: 18px
+	button[type="submit"]
+		display: inline-block
+		padding: 8px
+		padding: 15px 8px
+	.modal-body
+		width: 80%
+		margin-left: auto
+		margin-right: auto
+	.modal-dialog
+		margin-top: 15%
+	#top
+		width: 100%
+	.top_img
+		img
+			display: block
+			width: 120px
+			margin-left: auto
+	.header
+		display: none
+	#top_nav
+		display: none
+	nav
+		top: 0
+		height: 75px
+		position: fixed
+		top: 0
+		background-color: #aaa
+		opacity: .9
+		z-index: 10000
+	.main
+		&_header
+			h1
+				font-size: 15px
+				text-align: center
+				display: block
+				margin-bottom: 30px
+				span
+					line-height: 1.5
+		h3
+			font-size: 14px
+			text-align: center
+			span
+				display: block
+				margin-top: 5px
+		&_buttons
+			margin-top: 20px
+			button
+				display: block
+				margin-left: auto
+				margin-right: auto
+			button#types
+				margin-left: auto
+				margin-top: 10px
+				padding: 10px 20px
+				font-size: 18px
+			button#meas
+
+				padding: 12px 20px
+				font-size: 18px
+	.help
+		text-align: center
+	.offer
+		text-align: center
+		h4
+			margin-top: 30px
+			margin-bottom: 0
+		h3
+			margin: 0
+			margin-top: 10px
+			margin-bottom: 15px
+		p
+			margin-bottom: 20px
+		input[name="name"]
+			display: block
+			margin-bottom: 20px
+		input[name="phone"]
+			margin-bottom: 20px
+	.section_header h2
+		font-size: 24px
+	.feedback
+		background-color: #f8f8f8
+		padding-top: 45px
+		padding-bottom: 80px
+		text-align: center
+		.slider
+
+		.section_header
+			margin-bottom: 50px
+		.item
+			padding: 20px
+			background-color: #aaa
+			height: 100%
+			h5
+				font-family: PFB
+				color: #666
+				margin-top: px
+				font-size: 20px
+			a
+				font-size: 18px
+			p
+				margin-top: 15px
+				width: 260px
+				margin-left: auto
+				margin-right: auto
+				font-family: PFL
+		.carousel-indicators
+			bottom: -50px
+	.footer
+		text-align: center
+		.icon
+			background-color: #ccc
+			display: inline-block
+			border-radius: 50%
+			width: 35px
+			line-height: 33px
+			margin-right: 10px
+			padding-left: 2px
+			height: 35px
+			transition: .2s
+			&:nth-child(2)
+				padding-left: 2px
+			&:hover
+				background-color: #fff
+			&:last-child
+				margin-right: 0
+		.social
+			margin-top: 20px
+		#answer
+			background-color: transparent
+			display: block
+			margin-left: auto
+			margin-right: auto
+			margin-top: 30px
+			border: none
+			padding: 10px 35px
+			color: #fff
+			border: 2px solid #fff
+			text-transform: uppercase
+			transition: .2s
+			font-family: PFB
+			&:hover
+				color: #666
+				background-color: #fff
+		.all_me
+			margin-top: 35px
+
+			h5
+				font-size: 20px
+			p
+				text-transform: uppercase
+				font-family: PFL
+		.policy
+			text-align: center
+			a
+				color: #fff
+				border-bottom: 1px solid #fff
+				display: inline-block
+		.data
+			text-align: center
+			h4
+				font-family: PFB
+				text-transform: uppercase
+			a
+				color: #ff9933
+				font-family: PFB
+				transition: .2s
+				&:hover
+					color: #fff
+		address
+			p#address
+				margin-top: 10px
+				font-family: PFL
+				margin-bottom: 0
+				margin-left: -20px
+				&::before
+					margin-right: 5px
+		p#phone
+			margin-left: -20px
+		.details
+			.inn
+				margin-top: -20px
+				margin-bottom: 30px
+		.policy
+			margin-bottom: 40px
+	audio
+		margin-left: auto
+		margin-right: auto
+	.modal-header
+		border: none
+		margin-top: -50px
+		.close
+			text-shadow: none
+			color: #fff
+			opacity: .7
+			margin-right: -18px
+
+	.modal-content
+		border-radius: 0
+	.modal-body
+		input[name="name"]
+			background: #fff url('../img/icon_man.png') center left 5px no-repeat
+			padding: 25px
+			padding-left: 30px
+			border: none
+			border: 1px solid #ccc
+			font-family: PFL
+			margin-top: 25px
+			border-radius: 0
+			opacity: 0.6
+			&:focus
+				opacity: 1
+				outline: none
+				outline: 2px solid #f93
+		input[name="phone"]
+			background: #fff url('../img/icon_tele.png') center left 5px no-repeat
+			padding: 25px
+			padding-left: 30px
+			border: none
+			border: 1px solid #ccc
+			font-family: PFL
+			border-radius: 0
+			margin-top: 25px
+			opacity: 0.6
+			&:focus
+				opacity: 1
+				outline: none
+				outline: 2px solid #f93
+		button[type="submit"]
+			background-color: #f93
+			color: #fff
+			font-family: PFB
+			border: none
+			border: 2px solid #f93
+			padding: 15px 
+			letter-spacing: .2px
+			border-radius: 5px
+			text-transform: uppercase
+			margin-top: 25px
+			margin-left: auto
+			display: block
+			margin-right: auto
+			transition: .4s
+			&:hover
+				color: #f93
+				background-color: transparent
+		.fotorama
+			margin-top: 12px
+			padding-left: 6px
+		textarea
+			resize: none
+			margin-top: 25px
+			width: 100%
+			padding-left: 15px
+			padding-top: 15px
+
+			font-family: PFL
+			opacity: 0.6
+			&:focus
+				outline: 2px solid #f93
+				opacity: 1
+		.political
+			h4
+				margin-bottom: 20px
+				padding-top: 5px
+		p
+			padding: 10px
+			font-size: 16px
+			span
+				color: #f93
+				font-family: PFB
+				font-size: 24px
+	.modal-dialog
+		margin-top: 35%
+
+
+@media (min-width: 456px) and (max-width: 767.98px)
+	.main_header
+		h1
+			font-size: 22px
+	.main
+		h3
+			font-size: 20px
+
+@media (max-width: 992px)
+	.help
+		text-align: center
+
+
